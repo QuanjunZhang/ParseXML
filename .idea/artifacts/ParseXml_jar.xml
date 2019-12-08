@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ParseXml:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ParseXml_jar</output-path>
+    <root id="archive" name="ParseXml.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ParseXml" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/fastjson-1.2.62.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/dom4j-2.1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
