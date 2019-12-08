@@ -9,9 +9,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ParseXML {
 
@@ -90,13 +88,50 @@ public class ParseXML {
 
         JSONArray result = new JSONArray();
 
-        for (List<String> colorList : colorsList) {
-            JSONObject catchNode = new JSONObject(true);
-            catchNode.put("location", colorList.get(0));
-            catchNode.put("color", colorList.get(1));
+//        for (List<String> colorList : colorsList) {
+//            JSONObject catchNode = new JSONObject(true);
+//            catchNode.put("location", colorList.get(0));
+//            catchNode.put("color", colorList.get(1));
+//
+//            result.add(catchNode);
+//        }
 
-            result.add(catchNode);
+        //2019-12-08 修改colorNode格式
+        List<String> fileList = new ArrayList<>();
+        Map<String, String> map = new HashMap<>();
+        for (List<String> colorList : colorsList) {
+            String fileName = colorList.get(0).substring(0, colorList.get(0).indexOf(".java")+5);
+            if (!fileList.contains(fileName)) fileList.add(fileName);
+            String lineNum = colorList.get(0).substring(colorList.get(0).indexOf(".java")+6);
+
+            if (map.get(fileName) == null) {
+                map.put(fileName, lineNum + ":" + colorList.get(1));
+            }else {
+                String lineInfo = map.get(fileName);
+                map.put(fileName, lineInfo + " " +lineNum + ":" + colorList.get(1));
+            }
+
         }
+
+        for (String fileName : fileList){
+            JSONObject jsonObject = new JSONObject();
+
+
+            JSONArray jsonArray_file = new JSONArray();
+            for (String lineInfo : map.get(fileName).split(" ")){
+                JSONArray jsonArray_line = new JSONArray();
+                jsonArray_line.add(Integer.parseInt(lineInfo.split(":")[0]));
+                jsonArray_line.add(Integer.parseInt(lineInfo.split(":")[1]));
+                jsonArray_file.add(jsonArray_line);
+            }
+            jsonObject.put("path", fileName);
+            jsonObject.put("color", jsonArray_file);
+
+
+            result.add(jsonObject);
+        }
+
+
         return result;
     }
 
@@ -110,7 +145,7 @@ public class ParseXML {
         File inputXml = new File(fileName);
         SAXReader saxReader = new SAXReader();
         List<List<String>> nodesList = new ArrayList<>(); // element: name, type, location, count
-        List<List<String>> colorsList = new ArrayList<>(); // element: location, color(0,1,2)
+        List<List<String>> colorsList = new ArrayList<>(); // element: path, line, color(0,1,2)
         List<List<String>> edgesList = new ArrayList<>(); // element: branch-true, branch-false
         int numStatement = 0, numBranch = 0, numMethod = 0;
 
@@ -124,10 +159,10 @@ public class ParseXML {
                 for (Iterator iteratorFile = nodePackage.elementIterator("file"); iteratorFile.hasNext();) {
                     Element nodeFile = (Element) iteratorFile.next();
                     String nameFile = nodeFile.attributeValue("name");
+
                     String methodInfo = null;
                     for (Iterator iteratorLine = nodeFile.elementIterator("line"); iteratorLine.hasNext();) {
                         Element nodeLine = (Element) iteratorLine.next();
-
                         String lineType = nodeLine.attributeValue("type");
                         String lineIndex = namePackage + File.separator + nameFile + File.separator + nodeLine.attributeValue("num");
                         List nodeList;
@@ -151,8 +186,11 @@ public class ParseXML {
                                 colorList.add(lineIndex);
                                 colorList.add(lineCount.equals("0") ? "0" : "2");
                                 colorsList.add(colorList);
+
                                 break;
                             case "cond":
+                                nodesList.remove(nodesList.size()-1);
+                                colorsList.remove(colorsList.size()-1);
                                 String branchFalseCount = nodeLine.attributeValue("falsecount");
                                 String branchTrueCount = nodeLine.attributeValue("truecount");
 
@@ -177,8 +215,9 @@ public class ParseXML {
                                 //color
                                 colorList= new ArrayList();
                                 colorList.add(lineIndex);
-                                colorList.add(branchTrueCount.equals("0") && branchFalseCount.equals("0") ? "0" : !branchTrueCount.equals("0") && !branchFalseCount.equals("0") ? 2 :1);
+                                colorList.add(branchTrueCount.equals("0") && branchFalseCount.equals("0") ? "0" : !branchTrueCount.equals("0") && !branchFalseCount.equals("0") ? "2" : "1");
                                 colorsList.add(colorList);
+
 
                                 //edge
                                 edgeList = new ArrayList();
@@ -211,6 +250,7 @@ public class ParseXML {
                         }
 
                     }
+
                 }
             }
 
