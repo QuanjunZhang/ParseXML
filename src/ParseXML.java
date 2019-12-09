@@ -286,15 +286,15 @@ public class ParseXML {
     public static void main(String[] args){
 
         //定义文件路径
-//        String inputXMLFilePath = args[0];//"clover.xml"
-//        String outputCatchNodeFilePath = args[1];//"coverage.json"
-//        String outputNodeFilePath = args[2];//"project.json"
-//        String outputColorNodeFilePath = args[3];//"color.json"
+        String inputXMLFilePath = args[0];//"clover.xml"
+        String outputCatchNodeFilePath = args[1];//"coverage.json"
+        String outputNodeFilePath = args[2];//"project.json"
+        String outputColorNodeFilePath = args[3];//"color.json"
 
-        String inputXMLFilePath = "clover.xml";
-        String outputCatchNodeFilePath = "coverage.json";
-        String outputNodeFilePath = "project.json";
-        String outputColorNodeFilePath = "color.json";
+//        String inputXMLFilePath = "clover.xml";
+//        String outputCatchNodeFilePath = "coverage.json";
+//        String outputNodeFilePath = "project.json";
+//        String outputColorNodeFilePath = "color.json";
 
         //解析xml覆盖文档
         ParseXML parseXML = new ParseXML();

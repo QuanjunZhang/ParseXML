@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ParseXml:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="39db1adb-c97c-4976-ab6d-4111ffff585b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenClover覆盖内核替换说明（11-04更新）.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParseXml.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/color.json" beforeDir="false" afterPath="$PROJECT_DIR$/color.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ParseXml_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ParseXml_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ParseXml/META-INF/ParseXml.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ParseXml/ParseXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParseXml/ParseXML.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ParseXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParseXML.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,6 +38,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20574713" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -82,6 +87,10 @@
       <option name="presentableId" value="Default" />
       <updated>1575794636650</updated>
       <workItem from="1575794638890" duration="7171000" />
+      <workItem from="1575806016921" duration="30000" />
+      <workItem from="1575856217101" duration="21000" />
+      <workItem from="1575875797797" duration="271000" />
+      <workItem from="1575878850563" duration="1223000" />
     </task>
     <servers />
   </component>
@@ -93,7 +102,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
