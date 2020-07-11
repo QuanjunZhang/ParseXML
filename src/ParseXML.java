@@ -20,7 +20,7 @@ public class ParseXML {
      * @return JSONObject，包含三个JSONArray，分别是覆盖粒度类型，node具体信息，有向边的具体信息
      */
     public JSONObject getNode(List<List<String>> nodesList, List<List<String>> edgesList){
-        String[] categories = {"statement", "branch", "method"};
+        String[] categories = {"openclover-statement", "openclover-branch", "openclover-method"};
         JSONObject result = new JSONObject(true);
 
         JSONArray categoriesJson = new JSONArray();
@@ -176,7 +176,7 @@ public class ParseXML {
                                 //node
                                 nodeList= new ArrayList();
                                 nodeList.add(lineName);
-                                nodeList.add("statement");
+                                nodeList.add("openclover-"+"statement");
                                 nodeList.add(lineIndex);
                                 nodeList.add(lineCount);
                                 nodesList.add(nodeList);
@@ -200,14 +200,14 @@ public class ParseXML {
                                 //node
                                 nodeList = new ArrayList();
                                 nodeList.add(branchTrueName);
-                                nodeList.add("branch");
+                                nodeList.add("openclover-"+"branch");
                                 nodeList.add(lineIndex + "-true");
                                 nodeList.add(branchTrueCount);
                                 nodesList.add(nodeList);
 
                                 nodeList = new ArrayList();
                                 nodeList.add(branchFalseName);
-                                nodeList.add("branch");
+                                nodeList.add("openclover-"+"branch");
                                 nodeList.add(lineIndex + "-false");
                                 nodeList.add(branchFalseCount);
                                 nodesList.add(nodeList);
@@ -233,7 +233,7 @@ public class ParseXML {
                                 //node
                                 nodeList= new ArrayList();
                                 nodeList.add(methodName);
-                                nodeList.add("method");
+                                nodeList.add("openclover-"+"method");
                                 nodeList.add(lineIndex);
                                 nodeList.add(methodCount);
                                 nodesList.add(nodeList);

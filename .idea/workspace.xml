@@ -6,15 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39db1adb-c97c-4976-ab6d-4111ffff585b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ParseXml_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ParseXml_jar.xml" afterDir="false" />
+    <list default="true" id="39db1adb-c97c-4976-ab6d-4111ffff585b" name="Default Changelist" comment="添加Jar包">
+      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParseXml.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ParseXml/META-INF/ParseXml.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ParseXml_jar/ParseXml.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ParseXml_jar/ParseXml.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ParseXml/ParseXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParseXml/ParseXML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ParseXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParseXML.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,25 +35,21 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Lang-1/1" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20574713" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.ParseXML">
     <configuration name="ParseXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -76,6 +73,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -90,8 +99,38 @@
       <workItem from="1575806016921" duration="30000" />
       <workItem from="1575856217101" duration="21000" />
       <workItem from="1575875797797" duration="271000" />
-      <workItem from="1575878850563" duration="1223000" />
+      <workItem from="1575878850563" duration="1619000" />
+      <workItem from="1575880643344" duration="823000" />
+      <workItem from="1575947637565" duration="5000" />
+      <workItem from="1575949246261" duration="14000" />
+      <workItem from="1585123883440" duration="2247000" />
+      <workItem from="1585487343994" duration="3033000" />
+      <workItem from="1585663876119" duration="10000" />
+      <workItem from="1585663918029" duration="43000" />
+      <workItem from="1585721045648" duration="934000" />
+      <workItem from="1585731461170" duration="27000" />
+      <workItem from="1585743040359" duration="49000" />
+      <workItem from="1585743180785" duration="75000" />
+      <workItem from="1585743267094" duration="129000" />
+      <workItem from="1585743505487" duration="490000" />
+      <workItem from="1585809365171" duration="399000" />
+      <workItem from="1586667238430" duration="5000" />
     </task>
+    <task id="LOCAL-00001" summary="添加Jar包">
+      <created>1575880190884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575880190884</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加Jar包">
+      <created>1575880299112</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575880299112</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,5 +151,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="添加Jar包" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Jar包" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="337" y="50" key="CommitChangelistDialog2" timestamp="1585123939828">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state x="337" y="50" key="CommitChangelistDialog2/0.0.1463.914@0.0.1463.914" timestamp="1585123939828" />
+    <state x="93" y="93" width="1277" height="728" key="DiffContextDialog" timestamp="1585743777705">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state x="93" y="93" width="1277" height="728" key="DiffContextDialog/0.0.1463.914@0.0.1463.914" timestamp="1585743777705" />
+    <state x="512" y="213" key="FileChooserDialogImpl" timestamp="1585731481506">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state x="512" y="213" key="FileChooserDialogImpl/0.0.1463.914@0.0.1463.914" timestamp="1585731481506" />
+    <state x="347" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585721064236">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state x="347" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1463.914@0.0.1463.914" timestamp="1585721064236" />
   </component>
 </project>
