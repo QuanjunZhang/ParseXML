@@ -4,6 +4,7 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -48,7 +49,7 @@ public class ParseXML {
             JSONObject node = new JSONObject(true);
             node.put("source", edgeList.get(0));
             node.put("target", edgeList.get(1));
-            node.put("value", "branch");
+            node.put("value", "openclover-branch");
             edgesJson.add(node);
         }
 
@@ -189,8 +190,9 @@ public class ParseXML {
 
                                 break;
                             case "cond":
-                                nodesList.remove(nodesList.size()-1);
-                                colorsList.remove(colorsList.size()-1);
+//                                branch本身是否也算一个语句，不算则去除之前存入的节点
+//                                nodesList.remove(nodesList.size()-1);
+//                                colorsList.remove(colorsList.size()-1);
                                 String branchFalseCount = nodeLine.attributeValue("falsecount");
                                 String branchTrueCount = nodeLine.attributeValue("truecount");
 
@@ -218,7 +220,6 @@ public class ParseXML {
                                 colorList.add(branchTrueCount.equals("0") && branchFalseCount.equals("0") ? "0" : !branchTrueCount.equals("0") && !branchFalseCount.equals("0") ? "2" : "1");
                                 colorsList.add(colorList);
 
-
                                 //edge
                                 edgeList = new ArrayList();
                                 edgeList.add(branchTrueName);
@@ -243,12 +244,10 @@ public class ParseXML {
                                 colorList.add(lineIndex);
                                 colorList.add(methodCount.equals("0") ? "0" : "2");
                                 colorsList.add(colorList);
-
                                 break;
                             default:
                                 break;
                         }
-
                     }
 
                 }
@@ -257,7 +256,6 @@ public class ParseXML {
         } catch (DocumentException e) {
             System.out.println(e.getMessage());
         }
-
         List<List<List<String>>> xmlResult = new ArrayList<>();
         xmlResult.add(nodesList);
         xmlResult.add(colorsList);

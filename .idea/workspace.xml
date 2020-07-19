@@ -6,10 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39db1adb-c97c-4976-ab6d-4111ffff585b" name="Default Changelist" comment="添加Jar包">
-      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParseXml.jar" afterDir="false" />
+    <list default="true" id="39db1adb-c97c-4976-ab6d-4111ffff585b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParseXml.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ParseXml.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color.json" beforeDir="false" afterPath="$PROJECT_DIR$/color.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ParseXml_jar/ParseXml.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ParseXml_jar/ParseXml.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ParseXml/ParseXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParseXml/ParseXML.class" afterDir="false" />
@@ -115,6 +117,12 @@
       <workItem from="1585743505487" duration="490000" />
       <workItem from="1585809365171" duration="399000" />
       <workItem from="1586667238430" duration="5000" />
+      <workItem from="1594446172961" duration="113000" />
+      <workItem from="1594696730211" duration="32000" />
+      <workItem from="1594965612120" duration="925000" />
+      <workItem from="1594970382522" duration="135000" />
+      <workItem from="1594970532720" duration="5825000" />
+      <workItem from="1595165688400" duration="2134000" />
     </task>
     <task id="LOCAL-00001" summary="添加Jar包">
       <created>1575880190884</created>
@@ -130,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575880299112</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加Jar包">
+      <created>1594446228973</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594446228973</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,21 +170,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="添加Jar包" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="337" y="50" key="CommitChangelistDialog2" timestamp="1585123939828">
+    <state x="337" y="50" key="CommitChangelistDialog2" timestamp="1594446227319">
       <screen x="0" y="0" width="1463" height="914" />
     </state>
-    <state x="337" y="50" key="CommitChangelistDialog2/0.0.1463.914@0.0.1463.914" timestamp="1585123939828" />
-    <state x="93" y="93" width="1277" height="728" key="DiffContextDialog" timestamp="1585743777705">
+    <state x="337" y="50" key="CommitChangelistDialog2/0.0.1463.914@0.0.1463.914" timestamp="1594446227319" />
+    <state x="139" y="80" width="1170" height="757" maximized="true" key="DiffContextDialog" timestamp="1595167839697">
       <screen x="0" y="0" width="1463" height="914" />
     </state>
-    <state x="93" y="93" width="1277" height="728" key="DiffContextDialog/0.0.1463.914@0.0.1463.914" timestamp="1585743777705" />
-    <state x="512" y="213" key="FileChooserDialogImpl" timestamp="1585731481506">
+    <state x="139" y="80" width="1170" height="757" maximized="true" key="DiffContextDialog/0.0.1463.914@0.0.1463.914" timestamp="1595167839697" />
+    <state width="1138" height="242" key="GridCell.Tab.0.bottom" timestamp="1595167170243">
       <screen x="0" y="0" width="1463" height="914" />
     </state>
-    <state x="512" y="213" key="FileChooserDialogImpl/0.0.1463.914@0.0.1463.914" timestamp="1585731481506" />
-    <state x="347" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585721064236">
+    <state width="1138" height="242" key="GridCell.Tab.0.bottom/0.0.1463.914@0.0.1463.914" timestamp="1595167170243" />
+    <state width="1138" height="242" key="GridCell.Tab.0.center" timestamp="1595167170243">
       <screen x="0" y="0" width="1463" height="914" />
     </state>
-    <state x="347" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1463.914@0.0.1463.914" timestamp="1585721064236" />
+    <state width="1138" height="242" key="GridCell.Tab.0.center/0.0.1463.914@0.0.1463.914" timestamp="1595167170243" />
+    <state width="1138" height="242" key="GridCell.Tab.0.left" timestamp="1595167170243">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state width="1138" height="242" key="GridCell.Tab.0.left/0.0.1463.914@0.0.1463.914" timestamp="1595167170243" />
+    <state width="1138" height="242" key="GridCell.Tab.0.right" timestamp="1595167170243">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state width="1138" height="242" key="GridCell.Tab.0.right/0.0.1463.914@0.0.1463.914" timestamp="1595167170243" />
+    <state x="324" y="191" key="Vcs.Push.Dialog.v2" timestamp="1594446242200">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state x="324" y="191" key="Vcs.Push.Dialog.v2/0.0.1463.914@0.0.1463.914" timestamp="1594446242200" />
+    <state x="93" y="93" width="1277" height="728" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595167839697">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state x="93" y="93" width="1277" height="728" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1463.914@0.0.1463.914" timestamp="1595167839697" />
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1595167573297">
+      <screen x="0" y="0" width="1463" height="914" />
+    </state>
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1463.914@0.0.1463.914" timestamp="1595167573297" />
   </component>
 </project>
